@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Awesome CSS -->
+    <script src="https://kit.fontawesome.com/f394ef7530.js" crossorigin="anonymous"></script>
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Calculadora de IMC</title>
+
+  </head>
+
+  <body>
+
+    
+    <div class="container"> <!-- Container -->
+
+      <img src="img/undraw_medical_research_qg4d.svg" class="img-fluid d-none d-md-block">
+        
+        
+        <div class="box"> <!-- Box -->
+
+          <h2>Cálculo de IMC</h2>
+
+          <a href="tabela.html" class="btn btn-dark btn-align">Tabela</a>
+
+          <div class="input-list"> <!-- Inputs -->
+
+            <div class="input-group form-group"> <!-- Grupo Altura -->
+
+              <div class="input-group-prepend">
+                <i class=" input-group-text fas fa-sort-amount-up-alt icon-config"></i>
+              </div>
+
+              <input id="altura" class="form-control" type="number" placeholder="Altura em metros (ex.:1.70)"> 
+
+              <div class="input-group-append">
+                <span class="input-group-text">m</span>
+              </div>
+            
+            </div> <!-- /Grupo Altura -->
+
+            <div class="input-group form-group"> <!-- Grupo Peso -->
+
+             <div class="input-group-prepend">
+                <i class="input-group-text fas fa-weight icon-config"></i>
+              </div>
+
+              <input id="peso" class="form-control" type="number" placeholder="Peso em quilos (ex.:68.5)"> 
+
+              <div class="input-group-append">
+                <span class="input-group-text">kg</span>
+              </div>
+
+            </div> <!-- /Grupo Peso -->
+
+                       
+          </div> <!-- /Inputs -->
+
+          <button onclick="calcular()" class="btn btn-dark">Calcular</button>
+          <button onclick="apagar()" class="btn btn-dark float-right">Apagar</button>
+      
+          
+          
+          <div class="bloco_resultado">
+            
+            <div class="bloco_resultado_escrita">
+              <span>IMC</span>
+              <span id="imc" class="float-right"></span>
+            </div>
+
+            <h3 id="resultado"></h3>
+            
+          </div>
+          <footer><span>Site desenvolvido por: <a href="https://tanizmoura.github.io/">Tanise Moura</a></span></footer>
+          
+        </div> <!-- /Box -->
+        
+       
+
+    </div> <!-- /Container --> 
+
+    <script src="js/calculo.js"></script>
+ 
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
